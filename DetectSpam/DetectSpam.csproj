@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Common\**" />
+    <None Remove="Data\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.5.2" />
+  </ItemGroup>
+
+</Project>
